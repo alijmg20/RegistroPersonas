@@ -31,7 +31,7 @@ include_once '../plantillas/cabecera.inc.php';
         <tr >
             <td>Nombre</td>
             <td>Apellidos</td>
-            <td>correo</td>
+            <td>email</td>
             <td>edad</td>
             <td>telefono</td>
             <td>ciudad</td>
@@ -48,7 +48,7 @@ include_once '../plantillas/cabecera.inc.php';
                 <td><?php echo $fila['telefono']; ?></td>
                 <td><?php echo $fila['ciudad']; ?></td>
                 <td><a href="actualizar.php?id=<?php echo $fila['id']; ?>" class="btn btn-secondary"><i class="fas fa-marker"> </i> </a></td>
-                <td><a href="eliminar.php?id=<?php echo $fila['id']; ?>" class="btn btn-danger"><i class="fas fa-trash-alt"> </i> </a></td>
+                <td><a href="../Modelo/delete_accion.inc.php?id=<?php echo $fila['id']; ?>" class="btn btn-danger"><i class="fas fa-trash-alt"> </i> </a></td>
             </tr>
 
         <?php endforeach ?>
