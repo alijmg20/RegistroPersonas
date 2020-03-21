@@ -10,23 +10,25 @@ include_once '../plantillas/cabecera.inc.php';
 
 
 <div class="container">
+    <form method="post">
     <div class="row">
+        
         <div class="col-md-8">
             <div class="panel-body">
-                <form method="post">
-                <div class="form-group">
-                    <input type="search" class="form-control" placeholder="¿A quien desea buscar?" name="buscar">
-                </div>
-                    </form>
+                
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="¿A quien desea buscar?" name="buscar">
+                    </div>
+                
             </div>
         </div>
         <div class="col-md-4">
-            <form  method="post">
                 <a href="crear.php" class="btn btn-success">Nuevo </a>
                 <input type="submit"  class="btn btn-warning" value="Buscar" name="btn_buscar">
-            </form>
+            
         </div>
     </div>
+    </form>
 </div>
 
 <div class="container">
