@@ -3,6 +3,7 @@ include_once '../Controlador/conexion.inc.php';
 
 include_once '../Modelo/read_action.inc.php';
 
+include_once '../Modelo/search_accion.inc.php';
 
 include_once '../plantillas/cabecera.inc.php';
 ?>
@@ -12,15 +13,17 @@ include_once '../plantillas/cabecera.inc.php';
     <div class="row">
         <div class="col-md-8">
             <div class="panel-body">
+                <form method="post">
                 <div class="form-group">
-                    <input type="search" class="form-control" placeholder="¿A quien desea buscar?">
+                    <input type="search" class="form-control" placeholder="¿A quien desea buscar?" name="buscar">
                 </div>
+                    </form>
             </div>
         </div>
         <div class="col-md-4">
             <form  method="post">
                 <a href="crear.php" class="btn btn-success">Nuevo </a>
-                <a href="#" class="btn btn-warning">Buscar </a>
+                <input type="submit"  class="btn btn-warning" value="Buscar" name="btn_buscar">
             </form>
         </div>
     </div>
